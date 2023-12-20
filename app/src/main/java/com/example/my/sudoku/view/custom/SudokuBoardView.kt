@@ -13,7 +13,7 @@ import android.view.View
 import com.example.my.sudoku.game.Cell
 import kotlin.math.min
 
-class sudokuBoardView(context: Context, attributeSet: AttributeSet) : View(context, attributeSet) {
+class SudokuBoardView(context: Context, attributeSet: AttributeSet) : View(context, attributeSet) {
 
     private var sqrtSize = 3
     private var size = 9
@@ -22,7 +22,7 @@ class sudokuBoardView(context: Context, attributeSet: AttributeSet) : View(conte
     private var selectedRow = 0
     private var selectedCol = 0
 
-    private var listener: sudokuBoardView.OnTouchListener? = null
+    private var listener: SudokuBoardView.OnTouchListener? = null
     private var cells: List<Cell>? = null
 
     private val thickLinePaint = Paint().apply {
@@ -212,7 +212,7 @@ class sudokuBoardView(context: Context, attributeSet: AttributeSet) : View(conte
         invalidate()
     }
 
-    fun registerListener(listener: sudokuBoardView.OnTouchListener) {
+    fun registerListener(listener: SudokuBoardView.OnTouchListener) {
         this.listener = listener
     }
 

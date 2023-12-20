@@ -10,7 +10,8 @@
         android:id="@+id/sudokuBoardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/buttonsLayout" />
+        android:layout_above="@id/buttonsLayout"
+        tools:ignore="MissingClass" />
 
     <GridLayout
         android:id="@+id/buttonsLayout"
